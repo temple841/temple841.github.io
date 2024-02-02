@@ -16,6 +16,8 @@ nav {
   margin-bottom: 20px;
   display: flex;
   padding: 10px;
+  border: 6px dotted;
+  border-color: crimson;
 }
 h1 {
   display: flex;
@@ -27,6 +29,8 @@ h1 {
 #nav-ul {
   list-style-image: none;
   color: black;
+  border: 2px dashed;
+  border-color: crimson;
 }
 .nav-li {
   display: inline-block;
@@ -42,6 +46,8 @@ a {
 main {
   background: rgb(200, 30, 191);
   display: flex;
+  border: 6px dotted;
+  border-color: crimson;
 }
 .sidebar {
   margin-right: 25px;
@@ -49,6 +55,7 @@ main {
 }
 .sidebar-img {
   width: 200px;
+  border: 4px dashed silver;
 }
 .content {
   flex: 1;
@@ -57,7 +64,7 @@ main {
 
 /* portfolio styles */
 #interests {
-  border: 4px silver ridge;
+  border: 4px dashed silver;
   padding: 8px;
 }
 h2,
