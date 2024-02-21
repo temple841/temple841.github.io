@@ -16,10 +16,20 @@ $(function () {
       setInterval(main, 1000 / frameRate);
     }
     //create walls
-    createPlatform(700, 700, canvas.width + 100, 50); //top
-    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200); //right
-    createPlatform(800, 600, 50, canvas.height + 500); //bottom
-    createPlatform(canvas.width, -50, 50, canvas.height + 100);
+    createPlatform(50, 100, canvas.width + 50, 50); //top
+    createPlatform(-1300, canvas.height - 10, canvas.width + 100, 300); //right
+    createPlatform(400, 650, 50, canvas.height + 500); //bottom
+    createPlatform(700, 650, 50, canvas.height + 500); //bottom
+    createPlatform(800, 700, 100, canvas.height + 500); //bottom
+    createPlatform(950, 650, 50, canvas.height + 500); //bottom
+    createPlatform(1200, 550, 200, canvas.height + 500); //bottom
+    createPlatform(-100, 350, canvas.width + -50, 50); //top
+    createPlatform(canvas.width, -50, 50, canvas.height + 500);
+    //creat collectables
+    createCollectable(database, 1100, 800)
+    //create cannons
+    createCannon(top, 1, 1, 50, 50);
+
 
     /**
      * Uncomment the loops below to add a "grid" to your platformer game's screen
