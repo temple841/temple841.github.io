@@ -16,19 +16,27 @@ $(function () {
       setInterval(main, 1000 / frameRate);
     }
     //create walls
-    createPlatform(50, 100, canvas.width + 50, 50); //top
+  
     createPlatform(-1300, canvas.height - 10, canvas.width + 100, 300); //right
     createPlatform(400, 650, 50, canvas.height + 500); //bottom
     createPlatform(700, 650, 50, canvas.height + 500); //bottom
+    createPlatform(350, 650, 50, 50)
     createPlatform(800, 700, 100, canvas.height + 500); //bottom
     createPlatform(950, 650, 50, canvas.height + 500); //bottom
-    createPlatform(1200, 550, 200, canvas.height + 500); //bottom
+    createPlatform(1200, 600, 200, 450); //bottom
     createPlatform(-100, 350, canvas.width + -50, 50); //top
+    createPlatform(650, 200, 50, 150)
+    createPlatform(600, 300, 50, 50)
     createPlatform(canvas.width, -50, 50, canvas.height + 500);
     //creat collectables
-    createCollectable(database, 1100, 800)
+    createCollectable("database", 830, 600, .2, 1);
+    createCollectable("steve", 20, 700, .2, 1);
+    createCollectable("kennedi", 650, 150, .2, 1)
     //create cannons
-    createCannon(top, 1, 1, 50, 50);
+    createCannon("top", 480, 800, 50, 50);
+    createCannon("top", 900, 1100, 50, 50);
+    createCannon("right", 700, 1700, 50, 50)
+  
 
 
     /**
