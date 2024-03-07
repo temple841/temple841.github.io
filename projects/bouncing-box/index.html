@@ -48,7 +48,7 @@
 			box.on('click', handleBoxClick);
 
 			// moves the Box to a new position on the screen along the X-Axis
-			function moveBoxTo(newPositionX) {
+			function moveBoxTo(newPositionX) { 
 				box.css("left", newPositionX);
 			}
 
@@ -62,6 +62,7 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
+			var positionX = 0
 			
 
 			
@@ -70,9 +71,12 @@
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
-			function update() {
+			function update() { 
+				/* Increase value of positionX by 10 */
+				positionX = positionX + 10;
 				
-
+				moveBoxTo(positionX);
+				
 			};
 
 			/* 
@@ -81,6 +85,7 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
+				positionX = 0;
 				
 
 
